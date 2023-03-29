@@ -10,7 +10,7 @@
       <div class="navbar-nav">
         <a class="nav-item nav-link" href="#">Home<span class="sr-only"></span></a>
         <a class="nav-item nav-link" href="#">Categorias</a>
-        <a class="nav-item nav-link" href="#">lojas</a>
+        <a class="nav-item nav-link" href="#">Lojas</a>
       </div>
     </div>
   </nav>
