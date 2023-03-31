@@ -13,6 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+Route::get('carousel', [PaginaController::class, 'carousel']);
+Route::get('categorias', [PaginaController::class, 'categoria']);
+Route::get('/', [PaginaController::class, 'home']);
