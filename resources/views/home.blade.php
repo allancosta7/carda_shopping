@@ -11,9 +11,9 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
     <!-- Estilos -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="/public/css/styleMenu.css">
-    <link rel="stylesheet" href="/public/css/styleCarrosel.css">
-    <link rel="stylesheet" href="/public/css/styleCategoria.css">
+    <link rel="stylesheet" href="/css/styleMenu.css">
+    <link rel="stylesheet" href="/css/styleCarrosel.css">
+    <link rel="stylesheet" href="/css/styleCategoria.css">
 
     <!-- Scripts (jQuery não pode ser o slim que vem do Boostrap) -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -48,17 +48,17 @@
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <a href="#">
-                        <img src="public\img\img1.jpg" class="img-fluid img-style-carrosel" alt="Responsive image">
+                        <img src="\img\img1.jpg" class="img-fluid img-style-carrosel" alt="Responsive image">
                     </a>
                 </div>
                 <div class="carousel-item">
                     <a href="#">
-                        <img src="public\img\img2.jpg" class="img-fluid img-style-carrosel" alt="Responsive image">
+                        <img src="\img\img2.jpg" class="img-fluid img-style-carrosel" alt="Responsive image">
                     </a>
                 </div>
                 <div class="carousel-item">
                     <a href="#">
-                        <img src="public\img\img1.jpg" class="img-fluid img-style-carrosel" alt="Responsive image">
+                        <img src="\img\img1.jpg" class="img-fluid img-style-carrosel" alt="Responsive image">
                     </a>
                 </div>
             </div>
