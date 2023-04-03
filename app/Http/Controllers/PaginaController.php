@@ -20,4 +20,8 @@ class PaginaController extends Controller
     {
         return view('home');
     }
+    public function loja()
+    {
+        return view('loja');
+    }
 }
