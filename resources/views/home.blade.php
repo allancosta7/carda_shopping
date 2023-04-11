@@ -1,5 +1,4 @@
 <x-layout>
-    <link rel="stylesheet" href="/css/styleCategoria.css">
     <div class="container-fluid">
 
         <!-- inicio carrousel -->

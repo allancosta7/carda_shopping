@@ -14,7 +14,5 @@ use App\Http\Controllers\PaginaController;
 |
 */
 
-Route::get('carousel', [PaginaController::class, 'carousel']);
-Route::get('categorias', [PaginaController::class, 'categoria']);
 Route::get('/', [PaginaController::class, 'home']);
 Route::get('/loja', [PaginaController::class, 'loja']);

@@ -1,7 +1,15 @@
 .titulo-card-style-categoria{
     margin-top: 50px;
+    
 }
 .card-style-categoria{
     margin: 0 auto;
-    align-items: center;
+    text-align: center;
+    width: 15rem;
+    margin-top: 15px;
+    border: none;
+}
+a {
+    color: black;
+    text-decoration: none;
 }

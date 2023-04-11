@@ -31,6 +31,7 @@
 
   <link rel="stylesheet" href="/css/styleMenu.css">
   <link rel="stylesheet" href="/css/styleCarrosel.css">
+  <link rel="stylesheet" href="/css/styleCategoria.css">
 </head>
 
 <body>
@@ -39,7 +40,7 @@
 
     <div class="container">
       <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <a class="navbar-brand" href="#">CardaShopping</a>
+        <a class="navbar-brand" href="/">CardaShopping</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
           aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon">
@@ -48,7 +49,7 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
             <a class="nav-item nav-link" href="/">Home<span class="sr-only"></span></a>
-            <a class="nav-item nav-link" href="/categorias">Categorias</a>
+            {{-- <a class="nav-item nav-link" href="/categorias">Categorias</a> --}}
             <a class="nav-item nav-link" href="/loja">lojas</a>
           </div>
         </div>
