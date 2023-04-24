@@ -1,5 +1,5 @@
 <x-layout>
-    <div class="container-fluid">
+    <div class="sombra_borda container border">
 
         @include('components.carousel')
         @include('components.categorias')

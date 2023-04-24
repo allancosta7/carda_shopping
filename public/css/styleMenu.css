@@ -13,3 +13,6 @@ header a{
     background-color: #F2F2F2;
     color: #D95043;
 }
+.sombra_borda{
+    box-shadow: 0px 10px 30px rgb(205, 192, 192);
+}

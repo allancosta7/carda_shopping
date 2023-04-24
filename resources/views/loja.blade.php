@@ -1,6 +1,6 @@
 <x-layout>
   <link rel="stylesheet" href="/css/loja.css">
-  <div class="inicio container">
+  <div class="inicio sombra_borda container border">
 
     <div class="card mb-3">
       <div class="row">
@@ -60,8 +60,11 @@
 
 
 
+    <br>
+    <br>
+    <br>
+  </div>
+  </div>
 
-  </div>
-  </div>
 
 </x-layout>
