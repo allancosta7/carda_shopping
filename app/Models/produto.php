@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class Produto extends Model
 {
@@ -11,8 +12,8 @@ class Produto extends Model
     protected $table = 'produto';
     public $timestamps = false;
 
-    public function autor(): BelongsTo
+    public function loja(): BelongsTo
     {
-        return $this->belongsTo(Autor::class, 'id_autor');
+        return $this->belongsTo(Loja::class, 'id_loja');
     }
 }

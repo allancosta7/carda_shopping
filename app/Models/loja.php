@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Loja extends Model
 {
@@ -11,8 +12,8 @@ class Loja extends Model
     protected $table = 'loja';
     public $timestamps = false;
 
-    public function livros(): HasMany
+    public function produto(): HasMany
     {
-        return $this->hasMany(Livro::class);
+        return $this->hasMany(Produto::class,'id_loja');
     }
 }

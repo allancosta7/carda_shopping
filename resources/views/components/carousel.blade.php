@@ -1,4 +1,12 @@
-        <!-- inicio carrousel -->
+<?php
+
+use App\Models\Url;
+
+$urls = url::all();
+
+?>
+
+<!-- inicio carrousel -->
         <div id="mainSlider" class="carousel slide carousel-style-carrosel" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#mainSlider" data-slide-to="0" class="active"></li>
@@ -6,21 +14,13 @@
                 <li data-target="#mainSlider" data-slide-to="2"></li>
             </ol>
             <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <a href="#">
-                        <img src="\img\img1.jpg" class="img-fluid img-style-carrosel" alt="Responsive image">
-                    </a>
-                </div>
-                <div class="carousel-item">
-                    <a href="#">
-                        <img src="\img\img2.jpg" class="img-fluid img-style-carrosel" alt="Responsive image">
-                    </a>
-                </div>
-                <div class="carousel-item">
-                    <a href="#">
-                        <img src="\img\img1.jpg" class="img-fluid img-style-carrosel" alt="Responsive image">
-                    </a>
-                </div>
+                @foreach ($urls as $url)
+                    <div class="carousel-item">
+                            <a href="{{$url->url}}">
+                                <img src="{{$url->url}}" class="img-fluid img-style-carrosel" alt="Responsive image">
+                            </a>
+                    </div>
+                @endforeach
             </div>
             <a class="carousel-control-prev" href="#mainSlider" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
