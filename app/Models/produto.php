@@ -5,9 +5,14 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class produto extends Model
+class Produto extends Model
 {
     use HasFactory;
     protected $table = 'produto';
     public $timestamps = false;
+
+    public function autor(): BelongsTo
+    {
+        return $this->belongsTo(Autor::class, 'id_autor');
+    }
 }
