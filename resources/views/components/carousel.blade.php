@@ -2,7 +2,8 @@
 
 use App\Models\Url;
 
-$urls = url::all();
+$urls = Url::where('id_url', '>', 1)->get();
+$actives = Url::where('tipo', '=', 1)->get();
 
 ?>
 
@@ -14,13 +15,23 @@ $urls = url::all();
                 <li data-target="#mainSlider" data-slide-to="2"></li>
             </ol>
             <div class="carousel-inner">
-                @foreach ($urls as $url)
-                    <div class="carousel-item">
-                            <a href="{{$url->url}}">
-                                <img src="{{$url->url}}" class="img-fluid img-style-carrosel" alt="Responsive image">
+
+                @foreach ($actives as $active)
+                    <div class="carousel-item active">
+                            <a href="{{$active->url}}">
+                                <img src="\img\{{$active->url}}" class="img-fluid img-style-carrosel" alt="Responsive image">
                             </a>
                     </div>
                 @endforeach
+
+                @foreach ($urls as $url)
+                <div class="carousel-item">
+                        <a href="{{$url->url}}">
+                            <img src="\img\{{$url->url}}" class="img-fluid img-style-carrosel" alt="Responsive image">
+                        </a>
+                </div>
+            @endforeach
+
             </div>
             <a class="carousel-control-prev" href="#mainSlider" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
