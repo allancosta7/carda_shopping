@@ -1,55 +1,48 @@
-<?php
-
-use App\Models\Loja;
-use App\Models\Produto;
-
-$loja = Loja::find(1);
-$produtos = Produto::where('id_loja', '=', 1)->get();
-
-?>
-
 <x-layout>
-  <link rel="stylesheet" href="/css/loja.css">
-  <div class="inicio sombra_borda container border">
 
-    <div class="card mb-3">
-      <div class="row">
-        <div class="loja col-md-4">
-          <img src="/img/{{$loja->logo}}" class="imagem img-fluid" alt="...">
+  <style>
+    a{
+      color: #5a5a5a;
+      text-decoration: none;
+    }
+
+  </style>
+  
+    <section class="py-5 text-center container">
+      <div class="row py-lg-5">
+        <div class="col-lg-6 col-md-8 mx-auto">
+          <h1 class="fw-light">Lojas</h1>
         </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h2 class="nomeLoja card-title">{{$loja->nome}}</h2>
-            <p class="descricao card-text">{{$loja->descricao}}</p>
+      </div>
+    </section>
+  
+    <div class="album py-5 bg-light">
+      <div class="container">
+  
+        <div class="row">
+
+          <a href="/perfil_loja">
+          <div class="col-12">
+              <div class="card mb-3">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="https://s2.glbimg.com/V0vLGchlI0S7Xll4emaGMIJZSLU=/940x523/e.glbimg.com/og/ed/f/original/2021/01/07/bk-novo_logo.jpg" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+                
+          
           </div>
         </div>
       </div>
     </div>
-
-    <br>
-
-    <div class="card-group">
-
-      @foreach ($produtos as $produto) 
-      <div class="card">
-        <img src="/img/{{$produto->imagem}}" class="card-img-top">
-        <div class="card-body">
-          <h5 class="card-title">{{$produto->nome}}</h5>
-          <p class="card-text">Descrição: {{$produto->descricao}}</p>
-          <a href="#" class="btn btn-primary">R${{$produto->preco}}</a>
-        </div>
-      </div>
-      @endforeach
-
-    </div>
-
-
-
-    <br>
-    <br>
-    <br>
-  </div>
-  </div>
-
 
 </x-layout>
