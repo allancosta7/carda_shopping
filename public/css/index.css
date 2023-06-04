@@ -85,3 +85,25 @@ body {
     font-size: 3.5rem;
   }
 }
+
+.categoria{
+  text-align: center;
+  border: none;
+}
+
+.ponteiro-loja{
+  text-decoration: none;
+  color: #5a5a5a;
+  text-align: left;
+}
+.ponteiro-categoria{
+  text-decoration: none;
+  color: #5a5a5a;
+  text-align: center;
+}
+.card{
+  border-radius: 15px;
+}
+.card img{
+  border-radius: 15px;
+}

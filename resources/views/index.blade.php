@@ -1,7 +1,27 @@
+<?php
+
+use App\Models\Url;
+use App\Models\Loja;
+use App\Models\Categorias;
+
+
+$url1 = Url::find(1);
+$url2 = Url::find(2);
+$url3 = Url::find(3);
+
+$urls = URL::all();
+
+
+$lojas = Loja::All();
+
+
+?>
+
 <x-layout>
 
 <main>
 
+  {{-- CAROUSEL --}}
   <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -10,8 +30,7 @@
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
-
+        <img class="bd-placeholder-img" width="100%" height="100%" src="{{$url1->url}}" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
         <div class="container">
           <div class="carousel-caption text-start">
             <h1>Está com fome?</h1>
@@ -21,7 +40,7 @@
         </div>
       </div>
       <div class="carousel-item">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+        <img class="bd-placeholder-img" width="100%" height="100%" src="{{$url2->url}}" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
 
         <div class="container">
           <div class="carousel-caption">
@@ -32,7 +51,7 @@
         </div>
       </div>
       <div class="carousel-item">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+        <img class="bd-placeholder-img" width="100%" height="100%" src="{{$url3->url}}" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
 
         <div class="container">
           <div class="carousel-caption text-end">
@@ -53,47 +72,89 @@
     </button>
   </div>
 
-  <div class="container">
-    <!-- START THE FEATURETTES -->
+{{-- END CAROUSEL --}}
+{{-- INICIO LISTA DE LOJAS --}}
 
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading">Sobre nós. <span class="text-muted">conheça um pouco da gente.</span></h2>
-        <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
+    <section class="py-3 text-center container">
+      <div class="row py-lg-5">
+        <div class="col-lg-6 col-md-8 mx-auto">
+          <h1 class="fw-light">Lojas</h1>
+        </div>
       </div>
-      <div class="col-md-5">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+    </section>
+  
+    <div class="album py-3">
+      <div class="container">
+  
+        <div class="row">
 
+@foreach ($lojas as $loja)
+          
+          <div class="col-12 col-md-4">
+            <a class="ponteiro-loja" href="/perfil_loja">
+              <div class="card mb-3">
+                  <div class="row justify-content-center g-0">
+                    <div class="col-4">
+                      <img src="https://s2.glbimg.com/V0vLGchlI0S7Xll4emaGMIJZSLU=/940x523/e.glbimg.com/og/ed/f/original/2021/01/07/bk-novo_logo.jpg" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col-8">
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              </div>
+@endforeach
+                
+          
+          </div>
+        </div>
+      </div>
+{{-- FIM LISTA DE LOJAS --}}
+
+      <hr class="featurette-divider">
+
+{{-- CATEGORIAS --}}
+<div class="container">
+
+  <section class="py-3 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-light">Categorias</h1>
+      </div>
+    </div>
+  </section>
+  
+  <div class="album py-3">
+    <div class="container">
+
+      <div class="row justify-content-center">
+
+        <div class="col-5 col-md-2">
+          <a class="ponteiro-categoria" href="/perfil_loja">
+            <div class="card mb-3 " style="width: 8rem; border:none;">
+                <div class="row">
+                  <div class="col-12">
+                    <img src="https://s2.glbimg.com/V0vLGchlI0S7Xll4emaGMIJZSLU=/940x523/e.glbimg.com/og/ed/f/original/2021/01/07/bk-novo_logo.jpg" class="img-fluid" alt="...">
+                  </div>
+                  <div class="col-12">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            </div>
+            
+
+        </div>
       </div>
     </div>
 
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7 order-md-2">
-        <h2 class="featurette-heading">Nossos valores. <span class="text-muted">Pelo que prezamos.</span></h2>
-        <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
-      </div>
-      <div class="col-md-5 order-md-1">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-
-      </div>
-    </div>
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading">Onde atuamos? <span class="text-muted">Nosso trabalho.</span></h2>
-        <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
-      </div>
-      <div class="col-md-5">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-
-      </div>
-    </div>
-
-    <!-- /END THE FEATURETTES -->
+{{-- END CATEGORIAS --}}
 
   </div><!-- /.container -->
 

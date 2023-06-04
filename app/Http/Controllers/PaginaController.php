@@ -14,9 +14,9 @@ class PaginaController extends Controller
     {
         return view('loja');
     }
-    public function devs()
+    public function quem_somos()
     {
-        return view('devs');
+        return view('quem_somos');
     }
     public function perfil_loja()
     {
