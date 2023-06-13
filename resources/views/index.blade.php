@@ -86,7 +86,8 @@ $lojas = Loja::All();
     <div class="album py-3">
       <div class="container">
   
-        <div class="row">
+        <div class="row justify-content-center">
+
 
 @foreach ($lojas as $loja)
           
@@ -107,8 +108,7 @@ $lojas = Loja::All();
               </a>
               </div>
 @endforeach
-                
-          
+                        
           </div>
         </div>
       </div>

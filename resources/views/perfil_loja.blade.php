@@ -3,11 +3,11 @@
     <style>
         .card{
             margin-top: 15px;
+            border-radius: 15px
         }
         .card img{
-            border-radius: 0.25rem;
+            border-radius: 15px;
             border: none;
-            
         }
     </style>
 
