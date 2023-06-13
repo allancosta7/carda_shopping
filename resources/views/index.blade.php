@@ -88,10 +88,10 @@ $lojas = Loja::All();
   
         <div class="row justify-content-center">
 
+          <div class="col-12 col-md-8">
+            <div class="row justify-content-around">
 
-@foreach ($lojas as $loja)
-          
-          <div class="col-12 col-md-4">
+          <div class="col-12 col-md-6">
             <a class="ponteiro-loja" href="/perfil_loja">
               <div class="card mb-3">
                   <div class="row justify-content-center g-0">
@@ -107,8 +107,46 @@ $lojas = Loja::All();
                 </div>
               </a>
               </div>
-@endforeach
-                        
+
+              <div class="col-12 col-md-6">
+                <a class="ponteiro-loja" href="/perfil_loja">
+                  <div class="card mb-3">
+                      <div class="row justify-content-center g-0">
+                        <div class="col-4">
+                          <img src="https://s2.glbimg.com/V0vLGchlI0S7Xll4emaGMIJZSLU=/940x523/e.glbimg.com/og/ed/f/original/2021/01/07/bk-novo_logo.jpg" class="img-fluid" alt="...">
+                        </div>
+                        <div class="col-8">
+                          <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  </div>
+               
+              <div class="col-12 col-md-6">
+                <a class="ponteiro-loja" href="/perfil_loja">
+                  <div class="card mb-3">
+                      <div class="row justify-content-center g-0">
+                        <div class="col-4">
+                          <img src="https://s2.glbimg.com/V0vLGchlI0S7Xll4emaGMIJZSLU=/940x523/e.glbimg.com/og/ed/f/original/2021/01/07/bk-novo_logo.jpg" class="img-fluid" alt="...">
+                        </div>
+                        <div class="col-8">
+                          <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  </div>
+   
+              
+
+            </div>
+          </div>
+
           </div>
         </div>
       </div>
@@ -132,8 +170,12 @@ $lojas = Loja::All();
 
       <div class="row justify-content-center">
 
-        <div class="col-5 col-md-2">
-          <a class="ponteiro-categoria" href="/perfil_loja">
+        <div class="col-12 col-md-8">
+          <div class="row justify-content-around">
+          
+
+        <div class="col-5 col-md-3">
+          <a class="ponteiro-categoria" href="/resultado_pesquisa_loja">
             <div class="card mb-3 " style="width: 8rem; border:none;">
                 <div class="row">
                   <div class="col-12">
@@ -149,7 +191,9 @@ $lojas = Loja::All();
             </a>
             </div>
             
-
+       
+          </div>
+         </div>
         </div>
       </div>
     </div>

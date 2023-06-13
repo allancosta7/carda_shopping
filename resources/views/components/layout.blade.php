@@ -34,9 +34,6 @@
                 <a class="nav-link" aria-current="page" href="/">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/loja">Lojas</a>
-              </li>
-              <li class="nav-item">
                 <a class="nav-link" href="/quem_somos" tabindex="-1" aria-disabled="true">Quem somos</a>
               </li>
             </ul>
