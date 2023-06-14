@@ -13,12 +13,16 @@
 <div class="container marketing">
 
     <!-- Three columns of text below the carousel -->
-    <div class="row">
+    <div class="row justify-content-center">
+      <div class="col-8">
+        <div class="row justify-content-center">
+
       <div class="col-lg-4">
         <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="https://images.pexels.com/photos/1252983/pexels-photo-1252983.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
         <h2>Allan Costa</h2>
         <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
       </div><!-- /.col-lg-4 -->
+
 
       <div class="col-lg-4">
         <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="https://images.pexels.com/photos/1252983/pexels-photo-1252983.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
@@ -38,7 +42,8 @@
         <p>And lastly this, the third column of representative placeholder content.</p>
       </div><!-- /.col-lg-4 -->
 
-
+    </div>
+    </div>
     </div><!-- /.row -->
 
 </x-layout>

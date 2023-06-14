@@ -35,7 +35,6 @@ $lojas = Loja::All();
           <div class="carousel-caption text-start">
             <h1>Está com fome?</h1>
             <p>Conheça nossas lojas.</p>
-            <p><a class="btn btn-lg btn-primary" href="/loja">Lojas</a></p>
           </div>
         </div>
       </div>
@@ -46,7 +45,6 @@ $lojas = Loja::All();
           <div class="carousel-caption">
             <h1>Veja nossas categorias.</h1>
             <p>Olhe o que temos para você !</p>
-            <p><a class="btn btn-lg btn-primary" href="/categoria">Categoria</a></p>
           </div>
         </div>
       </div>
@@ -57,7 +55,6 @@ $lojas = Loja::All();
           <div class="carousel-caption text-end">
             <h1>Nós conheça um pouco mais.</h1>
             <p>Quem não os nossos desenvolvedores ?</p>
-            <p><a class="btn btn-lg btn-primary" href="/devs">Sobre nós</a></p>
           </div>
         </div>
       </div>
@@ -203,10 +200,6 @@ $lojas = Loja::All();
   </div><!-- /.container -->
 
 </main>
-
-
-    <script src="/js/bootstrap.bundle.min.js"></script>
-
       
   </body>
 

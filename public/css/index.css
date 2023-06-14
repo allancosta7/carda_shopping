@@ -5,7 +5,7 @@
 body {
   padding-top: 3rem;
   padding-bottom: 3rem;
-  color: #5a5a5a;
+  color: #590902;
 }
 
 
@@ -106,4 +106,10 @@ body {
 }
 .card img{
   border-radius: 15px;
+}
+.cor{
+  background-color: #A63F03!important;
+}
+.card{
+  color: #590902;
 }
