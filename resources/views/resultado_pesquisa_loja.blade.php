@@ -2,7 +2,7 @@
 
 use App\Models\Produto;
 
-// $produtos = Produto::where('categoria', '=', 'lanche')->get();
+$produtos = Produto::where('id_categoria', '=', $id)->get();
 
 
 ?>
@@ -24,34 +24,21 @@ use App\Models\Produto;
             <div class="col-12 col-lg-8">
               <div class="row justify-content-around">
 
-            <div class="col-6 col-lg-4">
-              <div class="card">
-                <img src="https://s2.glbimg.com/V0vLGchlI0S7Xll4emaGMIJZSLU=/940x523/e.glbimg.com/og/ed/f/original/2021/01/07/bk-novo_logo.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Produto</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                @foreach ($produtos as $produto)
+                    
+                <div class="col-6 col-lg-4">
+                  <div class="card">
+                    <img src="/img/produto/{{$produto->foto}}" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title">{{$produto->nome}}</h5>
+                      <p class="card-text">{{$produto->descricao}}</p>
+                      <p class="card-text">R${{$produto->preco}}</p>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="col-6 col-lg-4">
-              <div class="card">
-                <img src="https://s2.glbimg.com/V0vLGchlI0S7Xll4emaGMIJZSLU=/940x523/e.glbimg.com/og/ed/f/original/2021/01/07/bk-novo_logo.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Produto</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-6 col-lg-4">
-              <div class="card">
-                <img src="https://s2.glbimg.com/V0vLGchlI0S7Xll4emaGMIJZSLU=/940x523/e.glbimg.com/og/ed/f/original/2021/01/07/bk-novo_logo.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Produto</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                </div>
-              </div>
-            </div>
-            
+    
+
+            @endforeach
 
           </div>
           </div>

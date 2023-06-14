@@ -15,6 +15,7 @@ use App\Http\Controllers\PaginaController;
 */
 
 Route::get('/', [PaginaController::class, 'index']);
-Route::get('/resultado_pesquisa_loja', [PaginaController::class, 'resultado_pesquisa_loja']);
 Route::get('/quem_somos', [PaginaController::class, 'quem_somos']);
-Route::get('/perfil_loja', [PaginaController::class, 'perfil_loja']);
+
+Route::get('/perfil_loja/{id}', [PaginaController::class, 'perfil_loja']);
+Route::get('/resultado_pesquisa_loja/{id}', [PaginaController::class, 'resultado_pesquisa_loja']);
