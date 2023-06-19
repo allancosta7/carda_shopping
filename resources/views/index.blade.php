@@ -12,7 +12,14 @@ $categorias = Categoria::All();
 
 <main>
 
+
+
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+
+
   {{-- CAROUSEL --}}
+
   <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -21,7 +28,7 @@ $categorias = Categoria::All();
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img class="bd-placeholder-img" width="100%" height="100%" src="/img/baners/especial.jpg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+        <img class="img-fluid" src="/img/baners/especial.jpg">
         
         {{-- <div class="container">
           <div class="carousel-caption text-start">
@@ -32,7 +39,7 @@ $categorias = Categoria::All();
 
       </div>
       <div class="carousel-item">
-        <img class="bd-placeholder-img" width="100%" height="100%" src="/img/baners/pipoca.jpg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+        <img class="img-fluid" src="/img/baners/pipoca.jpg">
 
         {{-- <div class="container">
           <div class="carousel-caption">
@@ -43,7 +50,7 @@ $categorias = Categoria::All();
 
       </div>
       <div class="carousel-item">
-        <img class="bd-placeholder-img" width="100%" height="100%" src="/img/baners/quarta.jpg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+        <img class="img-fluid" src="/img/baners/quarta.jpg">
 
         {{-- <div class="container">
           <div class="carousel-caption text-end">
@@ -65,6 +72,11 @@ $categorias = Categoria::All();
   </div>
 
 {{-- END CAROUSEL --}}
+
+</div>
+</div>
+
+
 {{-- INICIO LISTA DE LOJAS --}}
 
     <section class="py-3 text-center container">
@@ -81,7 +93,7 @@ $categorias = Categoria::All();
         <div class="row justify-content-center">
 
           <div class="col-12 col-md-8">
-            <div class="row justify-content-around">
+            <div class="row">
 
               @foreach ($lojas as $loja)
               
@@ -90,7 +102,7 @@ $categorias = Categoria::All();
               <div class="card mb-3">
                   <div class="row justify-content-center g-0">
                     <div class="col-4">
-                      <img src="{{$loja->logo}}" class="img-fluid" width="100" height="100">
+                      <img src="/img/produto/{{$loja->logo}}" width="130px" height="72px">
                     </div>
                     <div class="col-8">
                       <div class="card-body">
@@ -131,7 +143,7 @@ $categorias = Categoria::All();
       <div class="row justify-content-center">
 
         <div class="col-12 col-md-8">
-          <div class="row justify-content-around">
+          <div class="row justify-content-center">
           
           @foreach ($categorias as $categoria)
               
@@ -140,7 +152,7 @@ $categorias = Categoria::All();
             <div class="card mb-3 " style="width: 8rem; border:none;">
                 <div class="row">
                   <div class="col-12">
-                    <img src="/img/categoria/{{$categoria->imagem}}" class="img-fluid">
+                    <img src="/img/categoria/{{$categoria->imagem}}" width="128px" height="128px">
                   </div>
                   <div class="col-12">
                     <div class="card-body">

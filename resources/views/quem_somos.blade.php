@@ -18,15 +18,15 @@
         <div class="row justify-content-center">
 
       <div class="col-lg-4">
-        <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="https://images.pexels.com/photos/1252983/pexels-photo-1252983.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+        <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="/img/devs/allan.jpg" alt="">
         <h2>Allan Costa</h2>
-        <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
+        <p></p>
       </div><!-- /.col-lg-4 -->
 
 
       <div class="col-lg-4">
-        <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="https://images.pexels.com/photos/1252983/pexels-photo-1252983.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
-        <h2>Simone</h2>
+        <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="/img/devs/simone.jpg" alt="">
+        <h2>Simone Campos</h2>
         <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
       </div><!-- /.col-lg-4 -->
 

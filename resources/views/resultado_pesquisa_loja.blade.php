@@ -2,6 +2,7 @@
 
 use App\Models\Produto;
 
+
 $produtos = Produto::where('id_categoria', '=', $id)->get();
 
 

@@ -31,7 +31,7 @@ $produtos = Produto::where('id_loja','=',$id)->get();
                 <div class="card col-12" style="border:none;">
                     <div class="row g-0">
                       <div class="col-md-4">
-                        <img src="{{$loja->logo}}" class="img-fluid">
+                        <img src="/img/produto/{{$loja->logo}}" class="img-fluid">
                       </div>
                       <div class="col-md-8">
                         <div class="card-body">
