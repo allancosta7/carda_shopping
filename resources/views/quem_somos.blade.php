@@ -20,24 +20,24 @@
       <div class="col-lg-4">
         <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="/img/devs/allan.jpg" alt="">
         <h2>Allan Costa</h2>
-        <p></p>
+        <p>Um desenvolvedor entusiasmado que está se formando em desenvolvimento de sistemas pela ETEC Devisate. Tenho paixão por transformar ideias em soluções digitais eficientes. Durante meus estudos, adquiri conhecimentos em HTML, CSS e PHP utilizei dos frameworks Laravel e Bootstrap e estou aberto a aprender novas tecnologias.</p>
       </div><!-- /.col-lg-4 -->
 
 
       <div class="col-lg-4">
-        <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="/img/devs/simone.jpg" alt="">
+        <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="/img/devs/simone.jpeg" alt="">
         <h2>Simone Campos</h2>
         <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
       </div><!-- /.col-lg-4 -->
 
       <div class="col-lg-4">
-        <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="https://images.pexels.com/photos/1252983/pexels-photo-1252983.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+        <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="/img/devs/tales.jpeg" alt="">
         <h2>Tales</h2>
-        <p>And lastly this, the third column of representative placeholder content.</p>
+        <p>Com um olhar sistêmico e acreditando que a melhoria continua é um processo que deve ser realizado diariamente para obter melhores resultados e alcançar os objetivos traçados, um futuro desenvolver que enxerga soluções práticas no ambiente de trabalho, aprendendo dia após dia para se tornar uma pessoa melhor profissionalmente.</p>
       </div><!-- /.col-lg-4 -->
 
       <div class="col-lg-4">
-        <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="https://images.pexels.com/photos/1252983/pexels-photo-1252983.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+        <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="/img/devs/gabriel.jpeg" alt="">
         <h2>Gabriel</h2>
         <p>And lastly this, the third column of representative placeholder content.</p>
       </div><!-- /.col-lg-4 -->
