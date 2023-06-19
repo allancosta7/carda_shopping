@@ -53,7 +53,7 @@
     <div class="app-footer">
       <hr class="featurette-divider">
       <footer class="container">
-        <p>&copy; Dev: Allan Costa</p>
+        <p>&copy; Dev's: Allan Costa/ Tales/ Simone/ Gabriel -- 2023</p>
       </footer>
     </div>
   </footer>
